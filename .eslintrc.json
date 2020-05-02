@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "jest",
+    "prettier",
+    "react"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 10
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "detect"
+    },
+    "propWrapperFunctions": [
+      "forbidExtraProps",
+      {"property": "freeze", "object": "Object"},
+      {"property": "myFavoriteWrapper"}
+    ],
+    "linkComponents": [
+      "Hyperlink",
+      {"name": "Link", "linkAttribute": "to"}
+    ]
+  }
+}
